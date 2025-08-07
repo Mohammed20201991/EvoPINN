@@ -1,6 +1,6 @@
 # EvoPINN: An Evolutionary Physics-Informed Neural Network Framework
 
-EvoPINN is a hybrid machine learning framework that integrates **Genetic Algorithms (GA)** with **Physics-Informed Neural Networks (PINNs)** and traditional **Artificial Neural Networks (ANNs)** to model complex physical phenomena. It automates neural architecture and hyperparameter tuning using evolutionary strategies, while simultaneously embedding physical constraints into the learning process.
+EvoPINN is a hybrid machine learning framework that integrates **Physics-Informed Neural Networks (PINNs)** with traditional **Artificial Neural Networks (ANNs)** to model complex physical phenomena.We utlize it to Predict the Collapse Potential in Chemically Stabilized Unsaturated Gypseous Soils, while simultaneously embedding physical constraints into the learning process.
 
 ---
 
@@ -8,38 +8,45 @@ EvoPINN is a hybrid machine learning framework that integrates **Genetic Algorit
 
 The EvoPINN framework is designed to:
 
-- Leverage **Genetic Algorithms** for optimizing neural network structures (e.g., number of neurons, layers, learning rate).
+- Leverage **PINNs** for optimizing neural network structures.
 - Incorporate **Physics-Informed Neural Networks** to enforce known physical laws through custom loss functions.
-- Use **Artificial Neural Networks** to model relationships in datasets involving partial knowledge or observational data.
-- Evaluate performance using standard regression metrics like **RMSE** and **R² Score**.
+- Uses **Artificial Neural Networks** to model relationships in datasets involving partial knowledge or observational data.
+- Evaluated performance using standard regression metrics like **RMSE** and **R² Score**.
 
 ---
 
 ##  Features
 
-- **Evolutionary Neural Architecture Search (ENAS)** for PINNs/ANNs
+- **Physics Neural Architecture Search (ENAS)** for PINNs
 - Physics-based loss enforcement in training
 - Scalable to both low- and high-dimensional regression problems
-- Easy integration with PyTorch and DEAP
+- Easy to integration with PyTorch and DEAP
 
 ---
 
 ## 📁 Directory Structure
 
 ~~~
-├── EvoPINN/
-│ ├── models/ # GA+ANN and PINN model definitions
-│ ├── ga_optimization/ 
-│ ├── datasets/ 
-│ ├── training/ 
-│ ├── utils/ 
-│ └── main.py 
+├── data/
+│   ├── cp.csv
+│── Notebooks/ 
+│   ├── Inference_pd_pinns_exp2_2ice_2.ipynb 
+│   ├── pd_pinns_exp2_2ice_2.ipynb
+│   ├── pd_pinns_exp2_2ice_2_draft_exp.ipynb
+│   └── regression&gauss_markov_assumptions.ipynb
+│── Inference_pd_pinns_exp2_2ice_2.ipynb 
+│── pd_pinns_exp2_2ice_2.ipynb
+│── pd_pinns_exp2_2ice_2_draft_exp.ipynb
+│── regression&gauss_markov_assumptions.ipynb
 ~~~
 
 
 ---
 
-## 🧪 Installation
+## Dataset 
+The collocted dataset are avaliable under `data/dataset.csv` dir., Please if want to use it cite it as mentioned below 
+
+## Installation
 
 ```bash
 pip install -r requirements.txt
@@ -54,15 +61,28 @@ deap
 ```
 
 ## Usage
-`python main.py --data "datasets/data.xlsx" --generations 30 --population 20`
+We can follow the instruction below to either train(for reproduce) or test(for usage or validate) 
+or we can use Google Colab Notebook listed under `Notebooks` dir.
+### Training
+```
+git clone https://github.com/Mohammed20201991/EvoPINN.git
+cd EvoPINN
+python pd_pinns_exp2_2ice_2.py --data "path/to/data"
+```
+
+### Testing
+`
+python Inference_pd_pinns_exp2_2ice_2.py --data "path/to/data"
+`
 
 ```
 @misc{evopinn2025,
-  title        = {EvoPINN: An Evolutionary Physics-Informed Neural Network Framework},
+  title        = {Physics Informed Neural Network to Predict the Collapse Potential in Chemically Stabilized Unsaturated Gypseous Soils},
   author       = {Omar H. Jasim, Mohammed Al-Hitawi, Mohammed Y. Fattah, and Nameer A. Kareem},
   year         = {2025},
   publisher    = {GitHub},
   journal      = {GitHub Repository},
+  email        = {omar.hamdi@uoanbar.edu.iq ,al_hitawe@uofallujah.edu.iq}
   howpublished = {\url{https://github.com/Mohammed20201991/EvoPINN}},
 }
 ```
