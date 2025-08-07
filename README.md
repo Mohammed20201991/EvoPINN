@@ -25,7 +25,7 @@ The EvoPINN framework is designed to:
 ---
 ## Piplines
 
-![Model Architecture](images/model_architecture.png)
+![Model Architecture](images/model_architecture.jpg)
 
 ## 📁 Directory Structure
 
