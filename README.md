@@ -23,6 +23,9 @@ The EvoPINN framework is designed to:
 - Easy to integration with PyTorch and DEAP
 
 ---
+## Piplines
+
+![Model Architecture](images/model_architecture.png)
 
 ## 📁 Directory Structure
 
@@ -75,6 +78,25 @@ python pd_pinns_exp2_2ice_2.py --data "path/to/data"
 python Inference_pd_pinns_exp2_2ice_2.py --data "path/to/data"
 `
 
+
+## Results
+```
+##  Performance Metrics Comparison
+
+| Metric | PINNs   | LR (OLS) | RL      | RR      |
+|--------|---------|----------|---------|---------|
+| RMSE   | 1.4109  | 9.9367   | 9.9367  | 10.0214 |
+| R²     | 0.9896  | 0.609    | 0.609   | 0.603   |
+
+Legend:
+- PINNs: Physics-Informed Neural Networks  
+- LR (OLS): Linear Regression (Ordinary Least Squares)  
+- RL: Ridge Regression  
+- RR: Regularized Regression
+
+> 📈 Lower RMSE and higher R² indicate better model performance.
+
+```
 ```
 @misc{evopinn2025,
   title        = {Physics Informed Neural Network to Predict the Collapse Potential in Chemically Stabilized Unsaturated Gypseous Soils},
