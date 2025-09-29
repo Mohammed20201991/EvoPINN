@@ -100,11 +100,11 @@ Legend:
 ```
 @misc{evopinn2025,
   title        = {Physics Informed Neural Network to Predict the Collapse Potential in Chemically Stabilized Unsaturated Gypseous Soils},
-  author       = {Omar H. Jasim, Mohammed Al-Hitawi, Mohammed Y. Fattah, and Nameer A. Kareem},
+  author       = {***},
   year         = {2025},
   publisher    = {GitHub},
   journal      = {GitHub Repository},
-  email        = {omar.hamdi@uoanbar.edu.iq ,al_hitawe@uofallujah.edu.iq}
-  howpublished = {\url{https://github.com/Mohammed20201991/EvoPINN}},
+  email        = {*** ,****}
+  howpublished = {\url{https://github.com/****/EvoPINN}},
 }
 ```
