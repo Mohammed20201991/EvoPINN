@@ -80,13 +80,16 @@ python Inference_pd_pinns_exp2_2ice_2.py --data "path/to/data"
 
 
 ## Results
-```
-##  Performance Metrics Comparison
 
-| Metric | PINNs   | LR (OLS) | RL      | RR      |
-|--------|---------|----------|---------|---------|
-| RMSE   | 1.4109  | 9.9367   | 9.9367  | 10.0214 |
-| R²     | 0.9896  | 0.609    | 0.609   | 0.603   |
+##  Performance Metrics Comparison
+The proposed Physics-Informed Neural Network (PINNs) significantly outperformed conventional statistical regression models in predicting the collapse potential of chemically stabilized unsaturated gypseous soils.
+
+|      Metric      |   PINNs (Ours)  | LR (OLS) | Lasso Regression | Ridge Regression | Physics-Constrained Random Forest | MLPNN (Previous Study) | RBFN (Previous Study) |
+| :--------------: | :-------------: | :------: | :--------------: | :--------------: | :-------------------------------: | :--------------------: | :-------------------: |
+|     **RMSE**     |    **1.4109**   |  9.9367  |      9.9367      |      10.0214     |               3.8173              |        **1.119**       |         1.731         |
+|      **R²**      |    **0.9896**   |   0.609  |       0.609      |       0.603      |               0.9098              |          0.904         |         0.841         |
+| **Dataset Size** | **600 samples** |     -    |         -        |         -        |                 -                 |       766 samples      |      766 samples      |
+
 
 Legend:
 - PINNs: Physics-Informed Neural Networks  
@@ -96,15 +99,49 @@ Legend:
 
 > 📈 Lower RMSE and higher R² indicate better model performance.
 
+
+Key Findings
+
+✅ PINNs achieved an R² of 0.9896, substantially outperforming all traditional regression models.<br>
+✅ RMSE was reduced by over 85% compared with Linear, Lasso, and Ridge Regression.<br>
+✅ The proposed approach achieved superior prediction accuracy while using 600 samples, demonstrating excellent generalization capability.<br>
+📌 Although the previous MLPNN reported a slightly lower RMSE, our proposed PINNs framework provides physics-informed interpretability, improved robustness, and significantly higher explanatory power (R² = 0.9896).<br>
+
+**Performance Interpretation**
+- Lower RMSE indicates smaller prediction errors.
+- Higher R² indicates better agreement between predicted and measured collapse potential.
+
+Publication
+
+🎉 This work has been accepted for publication in the Springer Nature journal:
+
+Modeling Earth Systems and Environment
+
+https://link.springer.com/journal/40808
+
+Paper Title
+
+Physics-Informed Neural Networks for Predicting Collapse Potential in Chemically Stabilized Unsaturated Gypseous Soils: Interpretable Machine Learning Framework
+
+```
+@article{AlHitawi2026PINNs,
+  title   = {Physics-Informed Neural Networks for Predicting Collapse Potential in Chemically Stabilized Unsaturated Gypseous Soils: Interpretable Machine Learning Framework},
+  author  = {Omer K. Jassim, Mohammed A.S. Al-Hitawi, et.al },
+  journal = {Modeling Earth Systems and Environment},
+  publisher = {Springer Nature},
+  year    = {2026},
+  note    = {Accepted for publication},
+  url     = {https://link.springer.com/journal/40808}
+}
 ```
 ```
 @misc{evopinn2025,
-  title        = {Physics Informed Neural Network to Predict the Collapse Potential in Chemically Stabilized Unsaturated Gypseous Soils},
-  author       = {***},
+  title        = {Physics-Informed Neural Networks for Predicting Collapse Potential in Chemically Stabilized Unsaturated Gypseous Soils: Interpretable Machine Learning Framework},
+  author       = {Omer K. Jassim, Mohammed A.S. Al-Hitawi, et.al },
   year         = {2025},
-  publisher    = {GitHub},
-  journal      = {GitHub Repository},
-  email        = {*** ,****}
-  howpublished = {\url{https://github.com/****/EvoPINN}},
+  publisher    = {Springer Nature},
+  journal      = {Modeling Earth Systems and Environment},
+  email        = {al_hitawe@uofallujah.edu.iq}
+  howpublished = {\url{https://github.com/Mohammed20201991/EvoPINN}},
 }
 ```
