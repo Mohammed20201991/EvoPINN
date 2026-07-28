@@ -117,22 +117,16 @@ Publication
 
 Modeling Earth Systems and Environment
 
-https://link.springer.com/journal/40808
+[https://link.springer.com/journal/40808](https://link.springer.com/article/10.1007/s40808-026-02853-1)
 
 Paper Title
 
 Physics-Informed Neural Networks for Predicting Collapse Potential in Chemically Stabilized Unsaturated Gypseous Soils: Interpretable Machine Learning Framework
 
+**Cite this article**
 ```
-@article{AlHitawi2026PINNs,
-  title   = {Physics-Informed Neural Networks for Predicting Collapse Potential in Chemically Stabilized Unsaturated Gypseous Soils: Interpretable Machine Learning Framework},
-  author  = {Omer K. Jassim, Mohammed A.S. Al-Hitawi, et.al },
-  journal = {Modeling Earth Systems and Environment},
-  publisher = {Springer Nature},
-  year    = {2026},
-  note    = {Accepted for publication},
-  url     = {https://link.springer.com/journal/40808}
-}
+Jasim, O.H., Al-Hitawi, M.A.S., Fattah, M.Y. et al. Physics-informed neural networks for predicting collapse potential in chemically stabilized unsaturated gypseous soils: interpretable machine learning framework.
+Model. Earth Syst. Environ. 12, 219 (2026). https://doi.org/10.1007/s40808-026-02853-1
 ```
 ```
 @misc{evopinn2025,
