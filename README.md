@@ -139,4 +139,6 @@ Model. Earth Syst. Environ. 12, 219 (2026). https://doi.org/10.1007/s40808-026-0
   howpublished = {\url{https://github.com/Mohammed20201991/EvoPINN}},
 }
 ```
+https://www.webofscience.com/wos/woscc/full-record/WOS:001835320300002
+
 https://www.scopus.com/pages/publications/105046103719?origin=resultslist
